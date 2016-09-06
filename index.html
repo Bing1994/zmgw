@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<script src="js/custom.modernizr.min.js"></script>
+<link rel="stylesheet" href="css/jquery.parallux.min.css">
+<link rel="stylesheet" href="css/base.css">
+<style>
+/* CSS 预设 */
+.clearfix:after{content:".";display:block;clear:both;height:0;overflow:hidden;}
+.clearfix{zoom:1;}
+.wrapper{width:1140px;margin:0 auto;}
+
+.left{float:left;}
+.right{float:right;}
+.block{display:block;}
+
+/*sectionH2*/
+.sectionH2{padding:50px 0;text-align:center;font-size:40px;color:#d5d6e2;font-weight:500;}
+.parallux{height:782px;z-index:1;}
+.parallux .parallux-bg .parallux-inner.bg-header{background-image:url(img/banner.jpg); }
+.text h2{padding-top:200px;text-align:center;font-size:50px;color:#fff;text-shadow:1px 1px 3px #000;}
+.text p{margin-top:70px;text-align:center;font-size:25px;color:#fff;text-shadow:1px 1px 3px #000;}
+
+.sectionCon{width:100%;z-index:2;
+	-webkit-backface-visibility:hidden;
+	-webkit-perspective:1000;
+	transform:translateZ(0);
+}
+.separator{margin:0 auto;max-width:1130px;text-align:center;font-size:18px;height: 505px;}
+.separator h1{font-family:Arial-Black;
+font-size:63px;
+color:#2b2b2c;
+letter-spacing:0px;
+margin-top: 109px;
+}
+.separator p{
+font-size:20px;
+color:#2b2b2c;
+letter-spacing:0px;
+line-height:32px;
+text-align:center;
+width: 1002px;
+position: absolute;
+top: 280px;
+}
+.separator .img2{
+    width: 56px;
+    height: 32px;
+    position: absolute;
+    top: 198px;
+    left: 632px;
+}
+.s-c{
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+.about{
+    width: 386px;
+    height: 49px;
+    position: absolute;
+    top: 128px;
+    left: 315px;
+}
+.up{
+    width: 79px;
+    height: 40px;
+    background: url(img/up.png);
+    background-size: 79px 40px;
+    position:relative;
+    -webkit-animation:m-up 1s linear forwards;
+    left: 50%;
+    margin-left: -40px;
+    top: 280px;
+    }
+.down{
+    width: 79px;
+    height: 40px;
+    position: relative;
+    background: url(img/down.png);
+    background-size: 79px 40px;
+    -webkit-animation:m-down 1s linear forwards;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -150px;
+}
+.zm-log{
+    width: 470px;
+    height: 304px;
+    background: url(img/zm-log.png);
+    background-size: 470px 304px;
+    margin: 120px auto 0;
+    display: block;
+    -webkit-animation:m-zm-log 5s ease forwards;
+
+}
+.join{
+    height: 595px;
+    background: #fff;
+}
+@keyframes m-up
+{
+0%   {top:280px;}
+100%  {top:140px;}
+}
+@keyframes m-down
+{
+0%   {top:-150px;}
+100%  {top:140px;
+}
+}
+@keyframes m-zm-log{
+    0%   {opacity: 0;}
+    100%  {opacity: 1;}
+}
+.business{
+    height: 782px;
+    background: #000;
+}
+.b-c{
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+.business .img1{
+    position: absolute;
+    top: 235px;
+    left: 693px;
+    width: 327px;
+
+}
+.b-log{
+    width: 296px;
+    height: 49px;
+    position: absolute;
+    left: 5px;
+    top: 222px;
+}
+.b-msg{
+    width: 596px;
+    font-size:20px;
+    color:#ffffff;
+    letter-spacing:0px;
+    line-height:33px;
+    text-align:left;
+    position: absolute;
+    top: 382px;
+    left: 5px;
+}
+.b-icon{
+    width: 56px;
+    height: 31px;
+    position: absolute;
+    top: 298px;
+    left: 5px;
+}
+.j-log{
+    width: 305px;
+    height: 49px;
+    position: absolute;
+    left: 355px;
+    top: 124px;
+}
+.j-c{
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+.j-icon{
+    left:588px;
+    top: 194px;
+}
+.j-2wm{
+    width: 185px;height: 181px;
+    position: absolute;
+    left: 140px;
+    top: 276px;
+}
+.j-2wm-l{
+    left: 695px;
+}
+.ios{
+    position: absolute;
+    left: 403px;
+    top: 307px;
+}
+footer{
+    height: 261px;
+    background-image: url(img/banner.jpg);
+    background-size: 100%;
+}
+.f-c{
+    width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+.f-c img{
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+}
+.f-c ul{
+    padding-top: 65px;
+}
+.f-c li{
+    margin-top: 22px;
+}
+
+.f-c p{
+    font-size:22px;
+    color:#ffffff;
+    letter-spacing:0px;
+    text-align:left;
+    line-height: 30px;
+}
+.f-c h2{
+    font-size:22px;
+    color:#ffffff;
+    letter-spacing:0px;
+    text-align:left;
+    position: absolute;
+    top: 136px;
+    right: 0;
+}
+</style>
+</head>
+
+<body>
+<div class="parallux">
+    <div class="parallux-bg fixed">
+        <div class="parallux-inner dark bg-header" >
+            <div class="up"></div>
+            <div class="zm-log"></div>
+            <div class="down"></div>
+        </div>
+    </div>
+</div>
+<div class="sectionCon">
+	<section class="separator">
+        <div class="s-c">
+            <img src="img/about.png" alt="" class="about">
+            <img src="img/d-1.png" alt="" class="img2">
+            <p>一家专注于医美的第三方平台，以国内外大型整形、医疗机构为依托。自成立之日起，以团队的专业知识为指导，以成为最有公信力的医美第三方平台、做客户身边最坚定的后盾为己任，一直兢兢业业地服务客户，获得客户的深度好评。</p>
+        </div>
+    </section>
+    <div class="business">
+        <div class="b-c">
+            <img src="img/b-log.png" alt="" class="b-log">
+            <img src="img/bs.png" class="img1"alt="">
+            <img src="img/b-icon.png" class="b-icon" alt="">
+            <p class="b-msg">为18岁至35岁的女性提供免费、团购和分期的整形服务，为25岁以上女性提供健康及抗衰老服务<br>
+致力于全球女性用户的美丽与健康。
+<br> 
+<br>    
+<br>    
+
+改变千人一面，追求个性化定制，帮助求美者找到与之相匹配的医院和医生资源。</p>
+        </div>
+    </div>
+    <div class="join">
+        <div class="j-c">
+            <img src="img/join.png" alt="" class="j-log">
+            <img src="img/b-icon.png" alt="" class="b-icon j-icon">
+            <img src="img/2wm.png" alt="" class="j-2wm">
+            <img src="img/2wm.png" alt="" class="j-2wm j-2wm-l">
+            <img src="img/ios.png" alt="" class="ios">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="f-c">
+        <ul>
+            <li class="clearfix">
+                <img src="img/tel.png" alt="" class="fl">
+                <p class="fl">010-56029359</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/point.png" alt="" class="fl">
+                <p class="fl">010-56029359</p>
+            </li>
+        </ul>
+        <h2>北京市环球致美科技有限公司</h2>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.parallux.js"></script>
+<script>
+$(function(){
+	$(".parallux").parallux({
+		fullHeight:false,
+		onMobile:'fixed'
+	});
+});
+</script>
+</body>
+</html>
